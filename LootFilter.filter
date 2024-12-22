@@ -1,0 +1,209 @@
+Show
+# Uniques
+Rarity = Unique
+	SetFontSize 37
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 209 101 29 255
+	SetTextColor 0 0 0 255
+	PlayAlertSound 1 125
+
+Show
+# Jewelry
+Class = Amulets Rings Belts Jewels
+	SetFontSize 34
+	SetBorderColor 103 64 48
+	SetBackgroundColor 198 97 229
+	SetTextColor 50 50 50 255
+
+Show
+Class = Waystones
+	SetFontSize 37
+	SetTextColor 193 193 193 255
+	SetBorderColor 198 151 13 249
+	SetBackgroundColor 56 84 99 255
+	PlayAlertSound 4 150
+	PlayEffect Grey
+	MinimapIcon 1 White Triangle
+
+Show
+#Tablet
+Class = Tablet
+	SetFontSize 37
+	SetBorderColor 100 50 30 255
+	SetBackgroundColor 229 215 215
+	SetTextColor 50 50 50 255
+	PlayAlertSound 4 150
+
+Show
+#Tablet
+Class == "Inscribed Ultimatum" "Trial Coins"
+	SetFontSize 42
+	SetBorderColor 2 2 2
+	SetBackgroundColor 255 248 248
+	SetTextColor 192 31 31
+	PlayAlertSound 13 150
+
+
+Show
+# Rare items
+Rarity = Rare
+	SetFontSize 37
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 240 217 8 255
+	SetTextColor 0 0 0 255
+	PlayAlertSound 12 75
+
+#Show
+#Staves
+#Class == Staves
+#Rarity > Normal
+#	SetFontSize 37
+#	SetTextColor 193 193 193 255
+#	SetBorderColor 198 151 13 249
+#	SetBackgroundColor 56 84 99 255
+#	PlayEffect Grey
+#	MinimapIcon 1 White Triangle
+
+Show
+# Wands, focuses
+BaseType = "Siphoning" "Attuned"
+Rarity == Normal
+ItemLevel >= 81
+	SetFontSize 40
+	SetTextColor 193 193 193 255
+	SetBorderColor 198 151 13 249
+	SetBackgroundColor 56 84 99 255
+
+Show
+# Wands, focuses
+BaseType = "Siphoning" "Attuned"
+Rarity >= Magic
+	SetFontSize 37
+	SetTextColor 193 193 193 255
+	SetBorderColor 198 151 13 249
+	SetBackgroundColor 56 84 99 255
+
+#Show
+# Socket items
+#	Sockets = "S"
+#	SetFontSize 37
+#	SetTextColor 75 75 75 255
+#	SetBackgroundColor 255 255 255 255
+
+Show
+	Quality >= 10
+	SetFontSize 37
+	SetTextColor 75 75 75 255
+	SetBackgroundColor 255 255 255 255
+
+Show
+BaseType == "Uncut Skill Gem" "Uncut Spirit Gem"
+ItemLevel == 20
+	SetFontSize 45
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetTextColor 244 0 0
+	PlayAlertSound 6 150
+
+Hide
+BaseType == "Uncut Skill Gem"
+AreaLevel >= 65
+ItemLevel < 19
+
+Show
+BaseType == "Uncut Skill Gem" "Uncut Spirit Gem" "Uncut Support Gem" 
+	SetFontSize 37
+	SetTextColor 193 193 193 255
+	SetBorderColor 198 151 13 249
+	SetBackgroundColor 56 84 99 255
+	PlayAlertSound 12 150
+	PlayEffect Grey
+	MinimapIcon 1 White Triangle
+
+Show 
+#Gold
+Class = Currency
+BaseType = Gold
+	SetFontSize 34
+	SetBorderColor 100 50 30 255
+	SetBackgroundColor 203 130 130 255
+	SetTextColor 50 50 50 255
+
+Hide
+#Wisdom
+Class Currency
+BaseType = "Scroll of Wisdom"
+	SetFontSize 37
+	SetBorderColor 100 50 30 255
+	SetBackgroundColor 203 130 130 255
+	SetTextColor 50 50 50 255
+	
+Show
+#Currency swing
+Class Currency
+BaseType = "Divine Orb" "Mirror of Kalandra" "Perfect Jeweller's Orb"
+	SetFontSize 45
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetTextColor 244 0 0
+	PlayAlertSound 6 150
+
+Show
+#Currency rest
+Class = Currency
+BaseType = "Orb of Annulment" "Chaos Orb" "Exalted Orb" "Orb of Alchemy" "Gemcutter's Prism" "Jeweller's Orb" "Orb of Annulment"
+	SetFontSize 37
+	SetBorderColor 245 6 6 255
+	SetBackgroundColor 255 255 255
+	SetTextColor 255 0 0
+	PlayAlertSound 1 150	
+
+Show
+#Currency rest
+Class = Currency
+	SetFontSize 37
+	SetBorderColor 100 50 30 255
+	SetBackgroundColor 203 130 130 255
+	SetTextColor 50 50 50 255
+	PlayAlertSound 2 150
+
+#Runes
+Show
+Class = Socketable
+	SetFontSize 37
+	SetTextColor 143 218 230 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 145 139 163 220
+	PlayEffect White
+	MinimapIcon 2 Blue Circle
+	PlayAlertSound 1 150
+
+#Socketables
+#Socketables -> Soul Cores
+Show
+Class == "Socketable"
+BaseType = "Soul Core"
+  SetFontSize 37
+	SetTextColor 143 218 230 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 145 139 163 220
+	PlayEffect White
+	MinimapIcon 2 Blue Circle
+	PlayAlertSound 1 150
+
+Show
+	Rarity > Rare
+
+#Show
+#BaseType = "Gloves"
+#	Rarity = Normal
+
+Show
+# Magics to show
+	BaseType = "Robe" "Raiment" "Tiara" "Circlet" "Gloves" "Sandals" "Slippers"
+	BaseType = "Expert"
+	Rarity = Magic
+
+Hide
+  Class = "Boots" "Gloves" "Body Armours" "Helmets" "Staves" "Maces" "Axes" "Swords" "Quivers" "Flasks" "Shields" "Bows" "Crossbows" "Sceptres" "Wands" "Foci"
+	Rarity = Normal Magic
